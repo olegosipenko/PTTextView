@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="PTTextView">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTAutoCompleteTextView">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTButton">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTCheckBox">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTCheckedTextView">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTChronometer">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTCompoundButton">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTDigitalClock">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTEditText">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTExtractEditText">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTMultiAutoCompleteTextView">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTRadioButton">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTSwitch">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTTextClock">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTToggleButton">
+        <attr name="typeface"/>
+        <attr name="fontFamily"/>
+        <attr name="textWeight"/>
+        <attr name="textStyle"/>
+    </declare-styleable>
+
+    <attr name="typeface">
+        <enum name="pt_sans_regular" value="0"/>
+        <enum name="pt_sans_italic" value="1"/>
+        <enum name="pt_sans_bold" value="2"/>
+        <enum name="pt_sans_bold_italic" value="3"/>
+        <enum name="pt_sans_narrow" value="4"/>
+        <enum name="pt_sans_narrow_bold" value="5"/>
+        <enum name="pt_sans_caption" value="6"/>
+        <enum name="pt_sans_caption_bold" value="7"/>
+        <enum name="pt_serif" value="8"/>
+        <enum name="pt_serif_italic" value="9"/>
+        <enum name="pt_serif_bold" value="10"/>
+        <enum name="pt_serif_bold_italic" value="11"/>
+        <enum name="pt_serif_caption" value="12"/>
+        <enum name="pt_serif_caption_italic" value="13"/>
+    </attr>
+
+    <attr name="fontFamily">
+        <enum name="pt_sans" value="0"/>
+        <enum name="pt_sans_narrow" value="1"/>
+        <enum name="pt_sans_caption" value="2"/>
+        <enum name="pt_serif" value="3"/>
+        <enum name="pt_serif_narrow" value="4"/>
+        <enum name="pt_serif_caption" value="5"/>
+    </attr>
+    
+    <attr name="textWeight">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+    </attr>
+
+    <attr name="textStyle">
+        <enum name="regular" value="0"/>
+        <enum name="italic" value="1"/>
+    </attr>
+</resources>
