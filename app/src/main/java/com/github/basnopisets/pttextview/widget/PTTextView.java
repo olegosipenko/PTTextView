@@ -18,7 +18,7 @@ public class PTTextView extends AppCompatTextView {
         super(context, attrs);
 
         if (!isInEditMode()) {
-            PTTextViewUtils.initTypeface(this, context, attrs);
+            PTTextViewUtils.setTypeface(this, context, attrs);
         }
     }
 
@@ -26,7 +26,7 @@ public class PTTextView extends AppCompatTextView {
         super(context, attrs, defStyle);
 
         if (!isInEditMode()) {
-            PTTextViewUtils.initTypeface(this, context, attrs);
+            PTTextViewUtils.setTypeface(this, context, attrs);
         }
     }
 }

@@ -18,7 +18,7 @@ public class PTTextViewUtils {
     private PTTextViewUtils() {
     }
 
-    public static void initTypeface(TextView textView, Context context, AttributeSet attrs) {
+    public static void setTypeface(TextView textView, Context context, AttributeSet attrs) {
         Typeface typeface;
 
         if (null != attrs) {
