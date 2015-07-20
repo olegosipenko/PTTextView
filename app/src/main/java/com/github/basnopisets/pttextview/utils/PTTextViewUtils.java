@@ -47,4 +47,9 @@ public class PTTextViewUtils {
         textView.setPaintFlags(textView.getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         textView.setTypeface(typeface);
     }
+
+    public static void setTypeface(Paint paint, Typeface typeface) {
+        paint.setFlags(paint.getFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
+        paint.setTypeface(typeface);
+    }
 }

@@ -157,7 +157,7 @@ public class PTTypefaceManager {
         return Typeface.createFromAsset(context.getAssets(), Typefaces.getFilePathByIndex(index));
     }
     
-    enum Typefaces {
+    public enum Typefaces {
 
         PT_SANS_REGULAR("fonts/PT Sans Regular.ttf", 0),
         PT_SANS_ITALIC("fonts/PT Sans Italic.ttf", 1),
