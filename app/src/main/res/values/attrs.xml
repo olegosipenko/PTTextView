@@ -121,6 +121,8 @@
         <enum name="pt_serif_bold_italic" value="11"/>
         <enum name="pt_serif_caption" value="12"/>
         <enum name="pt_serif_caption_italic" value="13"/>
+        <enum name="pt_mono_regular" value="14"/>
+        <enum name="pt_mono_bold" value="15"/>
     </attr>
 
     <attr name="fontFamily">
@@ -128,8 +130,8 @@
         <enum name="pt_sans_narrow" value="1"/>
         <enum name="pt_sans_caption" value="2"/>
         <enum name="pt_serif" value="3"/>
-        <enum name="pt_serif_narrow" value="4"/>
-        <enum name="pt_serif_caption" value="5"/>
+        <enum name="pt_serif_caption" value="4"/>
+        <enum name="pt_mono" value="5"/>
     </attr>
     
     <attr name="textWeight">

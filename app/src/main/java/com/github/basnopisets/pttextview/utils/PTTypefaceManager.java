@@ -53,7 +53,6 @@ public class PTTypefaceManager {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_NARROW.getIndex();
                 } else if (textStyle == TextStyles.ITALIC.ordinal()){
-                    // TODO find PT sans narrow italic
                     return Typefaces.PT_SANS_NARROW.getIndex();
                 } else {
                     throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
@@ -62,7 +61,6 @@ public class PTTypefaceManager {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_NARROW_BOLD.getIndex();
                 } else if (textStyle == TextStyles.ITALIC.ordinal()){
-                    /// TODO find PT sans narrow bold italic
                     return Typefaces.PT_SANS_NARROW_BOLD.getIndex();
                 } else {
                     throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
@@ -75,7 +73,6 @@ public class PTTypefaceManager {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_CAPTION.getIndex();
                 } else if (textStyle == TextStyles.ITALIC.ordinal()){
-                    // TODO find PT sans caption italic
                     return Typefaces.PT_SANS_CAPTION.getIndex();
                 } else {
                     throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
@@ -84,7 +81,6 @@ public class PTTypefaceManager {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_CAPTION_BOLD.getIndex();
                 } else if (textStyle == TextStyles.ITALIC.ordinal()){
-                    // TODO find PT sans caption bold italic
                     return Typefaces.PT_SANS_CAPTION_BOLD.getIndex();
                 } else {
                     throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
@@ -112,30 +108,6 @@ public class PTTypefaceManager {
             } else {
                 throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
             }
-        } else if (fontFamily == FontFamilies.PT_SERIF_NARROW.ordinal()) {
-            if (textWeight == TextWeights.NORMAL.ordinal()) {
-                if (textStyle == TextStyles.REGULAR.ordinal()) {
-                    // TODO find PT Serif narrow
-                    return Typefaces.PT_SERIF.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
-                    // TODO find PT Serif narrow italic
-                    return Typefaces.PT_SERIF_ITALIC.getIndex();
-                } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
-                }
-            } else if (textWeight == TextWeights.BOLD.ordinal()) {
-                if (textStyle == TextStyles.REGULAR.ordinal()) {
-                    // TODO find PT serif narrow bold
-                    return Typefaces.PT_SERIF_BOLD.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
-                    // TODO find PT serif narrow bold italic
-                    return Typefaces.PT_SERIF_BOLD_ITALIC.getIndex();
-                } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
-                }
-            } else {
-                throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
-            }
         } else if (fontFamily == FontFamilies.PT_SERIF_CAPTION.ordinal()) {
             if (textWeight == TextWeights.NORMAL.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
@@ -147,10 +119,8 @@ public class PTTypefaceManager {
                 }
             } else if (textWeight == TextWeights.BOLD.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
-                    // TODO find PT serif caption bold
                     return Typefaces.PT_SERIF_CAPTION.getIndex();
                 } else if (textStyle == TextStyles.ITALIC.ordinal()){
-                    // TODO find PT serif caption bold italic
                     return Typefaces.PT_SERIF_CAPTION_ITALIC.getIndex();
                 } else {
                     throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
@@ -158,7 +128,27 @@ public class PTTypefaceManager {
             } else {
                 throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
             }
-        } else {
+        } else if (fontFamily == FontFamilies.PT_MONO.ordinal()) {
+            if (textWeight == TextWeights.NORMAL.ordinal()) {
+                if (textStyle == TextStyles.REGULAR.ordinal()) {
+                    return Typefaces.PT_MONO_REGULAR.getIndex();
+                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                    return Typefaces.PT_MONO_REGULAR.getIndex();
+                } else {
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                }
+            } else if (textWeight == TextWeights.BOLD.ordinal()) {
+                if (textStyle == TextStyles.REGULAR.ordinal()) {
+                    return Typefaces.PT_MONO_BOLD.getIndex();
+                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                    return Typefaces.PT_MONO_BOLD.getIndex();
+                } else {
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                }
+            } else {
+                throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
+            }
+        }else {
             throw new IllegalArgumentException("Unknown `fontFamily` attribute value " + fontFamily);
         }
     }
@@ -182,7 +172,9 @@ public class PTTypefaceManager {
         PT_SERIF_BOLD("fonts/PT Serif Bold.ttf", 10),
         PT_SERIF_BOLD_ITALIC("fonts/PT Serif Bold Italic.ttf", 11),
         PT_SERIF_CAPTION("fonts/PT Serif Caption Regular.ttf", 12),
-        PT_SERIF_CAPTION_ITALIC("fonts/PT Serif Caption Italic.ttf", 13);
+        PT_SERIF_CAPTION_ITALIC("fonts/PT Serif Caption Italic.ttf", 13),
+        PT_MONO_REGULAR("fonts/PT Mono Regular.ttf", 14),
+        PT_MONO_BOLD("fonts/PT Mono Bold.ttf", 15);
 
         private final String filePath;
         private final int index;
@@ -214,9 +206,8 @@ public class PTTypefaceManager {
         PT_SANS_NARROW,
         PT_SANS_CAPTION,
         PT_SERIF,
-        PT_SERIF_NARROW,
-        PT_SERIF_CAPTION
-
+        PT_SERIF_CAPTION,
+        PT_MONO
     }
 
     enum TextWeights {
