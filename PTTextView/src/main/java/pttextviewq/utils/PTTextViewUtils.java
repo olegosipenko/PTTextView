@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
 import android.graphics.Typeface;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -18,7 +20,7 @@ public class PTTextViewUtils {
     private PTTextViewUtils() {
     }
 
-    public static void setTypeface(TextView textView, Context context, AttributeSet attrs) {
+    public static void setTypeface(@NonNull TextView textView, @NonNull Context context, @Nullable AttributeSet attrs) {
         Typeface typeface;
 
         if (null != attrs) {
@@ -43,12 +45,12 @@ public class PTTextViewUtils {
         setTypeface(textView, typeface);
     }
 
-    public static void setTypeface(TextView textView, Typeface typeface) {
+    public static void setTypeface(@NonNull TextView textView, @NonNull Typeface typeface) {
         textView.setPaintFlags(textView.getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         textView.setTypeface(typeface);
     }
 
-    public static void setTypeface(Paint paint, Typeface typeface) {
+    public static void setTypeface(@NonNull Paint paint, @NonNull Typeface typeface) {
         paint.setFlags(paint.getFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         paint.setTypeface(typeface);
     }

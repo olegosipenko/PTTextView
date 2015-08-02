@@ -2,6 +2,7 @@ package pttextviewq.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.support.annotation.NonNull;
 import android.util.SparseArray;
 
 /**
@@ -13,7 +14,7 @@ public class PTTypefaceManager {
 
     private static final SparseArray<Typeface> typefaces = new SparseArray(FONTS);
 
-    public static Typeface getTypeface(Context context, int index) throws IllegalArgumentException {
+    public static Typeface getTypeface(@NonNull Context context, int index) throws IllegalArgumentException {
         Typeface typeface = typefaces.get(index);
         if (null == typeface) {
             typeface = initTypeface(context, index);
@@ -22,7 +23,7 @@ public class PTTypefaceManager {
         return typeface;
     }
 
-    public static Typeface getTypeface(Context context, int fontFamily, int textWeight, int textStyle) {
+    public static Typeface getTypeface(@NonNull Context context, @NonNull int fontFamily, int textWeight, int textStyle) {
         int index = getTypefaceIndex(fontFamily, textWeight, textStyle);
         return getTypeface(context, index);
     }
