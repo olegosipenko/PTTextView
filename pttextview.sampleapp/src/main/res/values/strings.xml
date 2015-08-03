@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PTTextView.SampleApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pt_sans_regular">PT Sans Regular</string>
+    <string name="pt_sans_bold">PT Sans Bold</string>
+    <string name="pt_sans_italic">PT Sans Italic</string>
+    <string name="pt_sans_bold_italic">PT Sans Bold Italic</string>
+    <string name="pt_sans_narrow">PT Sans Narrow Regular</string>
+    <string name="pt_sans_narrow_bold">PT Sans Narrow Bold</string>
+    <string name="pt_sans_caption_regular">PT Sans Caption Regular</string>
+    <string name="pt_sans_caption_bold">PT Sans Caption Bold</string>
+    <string name="pt_serif_regular">PT Serif Regular</string>
+    <string name="pt_serif_bold">PT Serif Bold</string>
+    <string name="pt_serif_italic">PT Serif Italic</string>
+    <string name="pt_serif_bold_italic">PT Serif Bold Italic</string>
+    <string name="pt_serif_caption_regular">PT Serif Caption Regular</string>
+    <string name="pt_serif_caption_italic">PT Serif Caption Italic</string>
+    <string name="pt_mono_regular">PT Mono Regular</string>
+    <string name="pt_mono_bold">PT Mono Bold</string>
+</resources>
