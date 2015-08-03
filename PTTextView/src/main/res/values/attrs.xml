@@ -111,15 +111,15 @@
         <enum name="pt_sans_italic" value="1"/>
         <enum name="pt_sans_bold" value="2"/>
         <enum name="pt_sans_bold_italic" value="3"/>
-        <enum name="pt_sans_narrow" value="4"/>
+        <enum name="pt_sans_narrow_regular" value="4"/>
         <enum name="pt_sans_narrow_bold" value="5"/>
-        <enum name="pt_sans_caption" value="6"/>
+        <enum name="pt_sans_caption_regular" value="6"/>
         <enum name="pt_sans_caption_bold" value="7"/>
-        <enum name="pt_serif" value="8"/>
+        <enum name="pt_serif_regular" value="8"/>
         <enum name="pt_serif_italic" value="9"/>
         <enum name="pt_serif_bold" value="10"/>
         <enum name="pt_serif_bold_italic" value="11"/>
-        <enum name="pt_serif_caption" value="12"/>
+        <enum name="pt_serif_caption_regular" value="12"/>
         <enum name="pt_serif_caption_italic" value="13"/>
         <enum name="pt_mono_regular" value="14"/>
         <enum name="pt_mono_bold" value="15"/>
