@@ -24,12 +24,40 @@ import android.widget.CompoundButton;
 import pttextview.utils.PTTextViewUtils;
 
 /**
- * Created by Oleg on 19.07.15.
+ * A {@link android.widget.CompoundButton} with native support
+ * for all the Google PT fonts.
+ * <p/>
+ *
+ * @author Oleg Osipenko on 19.07.15.
  */
 public class PTCompoundButton extends CompoundButton {
+
+    /**
+     * Simple constructor is used when created view programmatically
+     *
+     * @param context The Context the widget is running in, through which it can
+     *                access the current theme, resources, etc.
+     */
+
     public PTCompoundButton(Context context) {
         super(context);
     }
+
+    /**
+     * Constructor is used when creating view through XML with attributes
+     * specified in the XML file. This version uses a default style of
+     * 0, so the only attribute values applied are those in the Context's Theme
+     * and the given AttributeSet.
+     * <p/>
+     * <p/>
+     * The method onFinishInflate() will be called after all children have been
+     * added.
+     *
+     * @param context The Context the widget is running in, through which it can
+     *                access the current theme, resources, etc.
+     * @param attrs   The attributes of the XML tag that is inflating the widget.
+     * @see #PTCompoundButton(Context, AttributeSet, int)
+     */
 
     public PTCompoundButton(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -39,6 +67,22 @@ public class PTCompoundButton extends CompoundButton {
         }
     }
 
+    /**
+     * Constructor is used when creating view through XML with specifying
+     * {@Link android.content.res.Resources.Theme} attribute. This
+     * constructor of View allows subclasses to use
+     * their own base style when they are inflating.
+     *
+     * @param context      The Context the widget is running in, through which it can
+     *                     access the current theme, resources, etc.
+     * @param attrs        The attributes of the XML tag that is inflating the widget.
+     * @param defStyleAttr The default style to apply to this widget. If 0, no style
+     *                     will be applied (beyond what is included in the theme). This may
+     *                     either be an attribute resource, whose value will be retrieved
+     *                     from the current theme, or an explicit style resource.
+     * @see #PTCompoundButton(Context, AttributeSet)
+     */
+
     public PTCompoundButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
@@ -46,6 +90,22 @@ public class PTCompoundButton extends CompoundButton {
             PTTextViewUtils.setTypeface(this, context, attrs);
         }
     }
+
+    /**
+     * Constructor is used when creating view through XML with specifying
+     * {@Link android.content.res.Resources.Theme} attribute. This
+     * constructor of View allows subclasses to use
+     * their own base style when they are inflating.
+     *
+     * @param context      The Context the widget is running in, through which it can
+     *                     access the current theme, resources, etc.
+     * @param attrs        The attributes of the XML tag that is inflating the widget.
+     * @param defStyleAttr The default style to apply to this widget. If 0, no style
+     *                     will be applied (beyond what is included in the theme). This may
+     *                     either be an attribute resource, whose value will be retrieved
+     *                     from the current theme, or an explicit style resource.
+     * @see #PTCompoundButton(Context, AttributeSet)
+     */
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public PTCompoundButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
