@@ -4,13 +4,16 @@ import android.app.Activity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import oleg.osipenko.pttextviewsampleapp.R
+import android.widget.Toast
+import kotlinx.android.synthetic.activity_main.*
 
 public class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        pt_sans_regular.setOnClickListener { Toast("PT Sans!") }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -31,5 +34,9 @@ public class MainActivity : Activity() {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+
+    fun Activity.Toast(message : CharSequence, duration : Int = Toast.LENGTH_LONG) {
+        Toast.makeText(this@MainActivity, message, duration).show()
     }
 }
