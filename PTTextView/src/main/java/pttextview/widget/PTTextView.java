@@ -18,20 +18,20 @@ package pttextview.widget;
 import android.content.Context;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 import pttextview.utils.PTTextViewUtils;
 
 
 /**
- * Implementation of a {@link TextView} with native support for all the Google PT fonts.
+ * A {@link android.widget.TextView} with native support for all the Google PT fonts.
+ * <p/>
  *
  * @author Oleg Osipenko on 18.07.15.
  */
 public class PTTextView extends AppCompatTextView {
 
     /**
-     * Simple constructor to use when creating a widget from code.
+     * Simple constructor is used when created view programmatically
      *
      * @param context The Context the widget is running in, through which it can
      *                access the current theme, resources, etc.
@@ -42,13 +42,12 @@ public class PTTextView extends AppCompatTextView {
     }
 
     /**
-     * Constructor that is called when inflating a widget from XML. This is called
-     * when a widget is being constructed from an XML file, supplying attributes
-     * that were specified in the XML file. This version uses a default style of
+     * Constructor is used when creating view through XML with attributes
+     * specified in the XML file. This version uses a default style of
      * 0, so the only attribute values applied are those in the Context's Theme
      * and the given AttributeSet.
-     * <p>
-     * <p>
+     * <p/>
+     * <p/>
      * The method onFinishInflate() will be called after all children have been
      * added.
      *
@@ -67,9 +66,10 @@ public class PTTextView extends AppCompatTextView {
     }
 
     /**
-     * Perform inflation from XML and apply a class-specific base style. This
-     * constructor of View allows subclasses to use their own base style when
-     * they are inflating.
+     * Constructor is used when creating view through XML with specifying
+     * {@Link android.content.res.Resources.Theme} attribute. This
+     * constructor of View allows subclasses to use
+     * their own base style when they are inflating.
      *
      * @param context  The Context the widget is running in, through which it can
      *                 access the current theme, resources, etc.
