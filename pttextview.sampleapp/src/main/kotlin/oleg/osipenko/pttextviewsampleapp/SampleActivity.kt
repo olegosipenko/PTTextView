@@ -2,17 +2,14 @@ package oleg.osipenko.pttextviewsampleapp
 
 import android.app.Activity
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 
-public class SampleActivity : AppCompatActivity() {
+public class SampleActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
-        toast(getIntent().getIntExtra("INDEX", 25).toString())
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -33,10 +30,5 @@ public class SampleActivity : AppCompatActivity() {
         }
 
         return super.onOptionsItemSelected(item)
-    }
-
-    fun Activity.toast(message: CharSequence, duration: Int = Toast.LENGTH_SHORT) {
-         
-        Toast.makeText(this, message, duration) 
     }
 }

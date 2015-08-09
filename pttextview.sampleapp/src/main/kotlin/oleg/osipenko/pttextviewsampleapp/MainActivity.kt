@@ -18,7 +18,9 @@ public class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
         viewGroup.views.forEachIndexed { i, view ->
             view.setOnClickListener {
-                navigate<SampleActivity>(i)
+                val intent = Intent(this@MainActivity, javaClass<SampleActivity>())
+                intent.putExtra(INDEX, i)
+                startActivity(intent)
             }
         }
     }
@@ -45,11 +47,4 @@ public class MainActivity : Activity() {
 
     public val ViewGroup.views: List<View>
         get() = (0..getChildCount() - 1) map { getChildAt(it) }
-
-    inline public fun <reified T : Activity> Activity.navigate(index: Int) {
-         
-        val intent = Intent(this, javaClass<T>())
-             intent.putExtra(INDEX, index)
-             startActivity(intent) 
-    }
 }

@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 22
@@ -15,7 +14,7 @@ android {
     sourceSets {
         main {
             manifest.srcFile 'src/main/AndroidManifest.xml'
-            java.srcDirs = ['src/main/kotlin']
+            java.srcDirs = ['src/main/java']
             res.srcDirs = ['src/main/res']
             assets.srcDirs = ['src/main/assets']
         }
@@ -26,19 +25,4 @@ dependencies {
     def libraryDependencies = rootProject.ext.libraryDependencies
 
     compile libraryDependencies.appcompat
-}
-
-buildscript {
-    ext.kotlin_version = '0.12.1218'
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
-
-    }
-}
-repositories {
-    mavenCentral()
 }
