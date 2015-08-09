@@ -1,0 +1,110 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_regular"
+        android:text="@string/pt_sans_regular"
+        style="@style/list_style"
+        app:typeface="pt_sans_regular"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_bold"
+        android:text="@string/pt_sans_bold"
+        style="@style/list_style"
+        app:typeface="pt_sans_bold"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_italic"
+        android:text="@string/pt_sans_italic"
+        style="@style/list_style"
+        app:typeface="pt_sans_italic"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_bold_italic"
+        android:text="@string/pt_sans_bold_italic"
+        style="@style/list_style"
+        app:typeface="pt_sans_bold_italic"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_narrow_regular"
+        android:text="@string/pt_sans_narrow"
+        app:typeface="pt_sans_narrow_regular"
+        style="@style/list_style"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_narrow_bold"
+        android:text="@string/pt_sans_narrow_bold"
+        style="@style/list_style"
+        app:typeface="pt_sans_narrow_bold"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_caption_regular"
+        android:text="@string/pt_sans_caption_regular"
+        style="@style/list_style"
+        app:typeface="pt_sans_caption_regular"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_caption_bold"
+        android:text="@string/pt_sans_caption_bold"
+        style="@style/list_style"
+        app:typeface="pt_sans_caption_bold"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_serif_regular"
+        android:text="@string/pt_serif_regular"
+        style="@style/list_style"
+        app:typeface="pt_serif_regular"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_serif_bold"
+        android:text="@string/pt_serif_bold"
+        style="@style/list_style"
+        app:typeface="pt_serif_bold"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_serif_italic"
+        android:text="@string/pt_serif_italic"
+        style="@style/list_style"
+        app:typeface="pt_serif_italic"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_serif_bold_italic"
+        android:text="@string/pt_serif_bold_italic"
+        style="@style/list_style"
+        app:typeface="pt_serif_bold_italic"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_serif_caption_regular"
+        android:text="@string/pt_serif_caption_regular"
+        style="@style/list_style"
+        app:typeface="pt_serif_caption_regular"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_serif_caption_italic"
+        android:text="@string/pt_serif_caption_italic"
+        style="@style/list_style"
+        app:typeface="pt_serif_caption_italic"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_serif_mono_regular"
+        android:text="@string/pt_mono_regular"
+        style="@style/list_style"
+        app:typeface="pt_mono_regular"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_mono_bold"
+        android:text="@string/pt_mono_bold"
+        style="@style/list_style"
+        app:typeface="pt_mono_bold"/>
+
+</LinearLayout>

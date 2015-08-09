@@ -1,0 +1,13 @@
+ext {
+    appCompatVersion = '22.2.1'
+    kotlinLibVersion = '0.12.1218'
+
+    libraryDependencies = [
+            appcompat: "com.android.support:appcompat-v7:$appCompatVersion"
+    ]
+
+    sampleAppDependencies = [
+            kotlinLib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlinLibVersion",
+            ptTextView: ':PTTextView'
+    ]
+}

@@ -22,5 +22,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.2.1'
+    def libraryDependencies = rootProject.ext.libraryDependencies
+
+    compile libraryDependencies.appcompat
 }

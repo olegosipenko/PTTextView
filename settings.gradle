@@ -1,1 +1,1 @@
-include ':PTTextView'
+include ':PTTextView', ':pttextview.sampleapp'

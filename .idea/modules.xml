@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PTTextView.iml" filepath="$PROJECT_DIR$/PTTextView.iml" />
       <module fileurl="file://$PROJECT_DIR$/PTTextView/PTTextView-PTTextView.iml" filepath="$PROJECT_DIR$/PTTextView/PTTextView-PTTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pttextview.sampleapp/pttextview.sampleapp.iml" filepath="$PROJECT_DIR$/pttextview.sampleapp/pttextview.sampleapp.iml" />
     </modules>
   </component>
 </project>
