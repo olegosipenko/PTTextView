@@ -1,5 +1,7 @@
-### PTTextView
-# An implementation of a [TextView](http://developer.android.com/reference/android/widget/TextView.html) with support of [Paratype & Google PT font family](http://www.paratype.com/public/)
+Android-PTTextView
+==================
+
+An implementation of a [TextView](http://developer.android.com/reference/android/widget/TextView.html) with support of [Paratype & Google PT font family](http://www.paratype.com/public/)
 
 A project was inspired by [RobotoTextView](https://github.com/johnkil/Android-RobotoTextView)
 
