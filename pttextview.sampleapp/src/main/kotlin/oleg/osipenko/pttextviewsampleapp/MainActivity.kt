@@ -11,8 +11,6 @@ import kotlinx.android.synthetic.activity_main.viewGroup
 
 public class MainActivity : Activity() {
 
-    public val INDEX: String = "INDEX"
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

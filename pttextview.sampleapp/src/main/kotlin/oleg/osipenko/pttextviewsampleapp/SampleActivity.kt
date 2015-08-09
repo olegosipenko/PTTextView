@@ -4,12 +4,16 @@ import android.app.Activity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import kotlinx.android.synthetic.activity_sample.sampleText
+import pttextview.utils.PTTypefaceManager
 
 public class SampleActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
+        val typeface = PTTypefaceManager.getTypeface(this, getIntent().getIntExtra(INDEX, 0))
+        sampleText.setTypeface(typeface)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
