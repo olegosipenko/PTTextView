@@ -1,31 +1,23 @@
-package oleg.osipenko.pttextviewsampleapp;
+package oleg.osipenko.pttextviewsampleapp
 
 import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
-import kotlinx.android.synthetic.activity_main.viewGroup
+import android.widget.Toast
 
-public class MainActivity : Activity() {
-
-    public val INDEX: String = "INDEX"
+public class SampleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        viewGroup.views.forEachIndexed { i, view ->
-            view.setOnClickListener {
-                navigate<SampleActivity>(i)
-            }
-        }
+        setContentView(R.layout.activity_sample)
+        toast(getIntent().getIntExtra("INDEX", 25).toString())
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu)
+        getMenuInflater().inflate(R.menu.menu_sample, menu)
         return true
     }
 
@@ -43,13 +35,8 @@ public class MainActivity : Activity() {
         return super.onOptionsItemSelected(item)
     }
 
-    public val ViewGroup.views: List<View>
-        get() = (0..getChildCount() - 1) map { getChildAt(it) }
-
-    inline public fun <reified T : Activity> Activity.navigate(index: Int) {
+    fun Activity.toast(message: CharSequence, duration: Int = Toast.LENGTH_SHORT) {
          
-        val intent = Intent(this, javaClass<T>())
-             intent.putExtra(INDEX, index)
-             startActivity(intent) 
+        Toast.makeText(this, message, duration) 
     }
 }
