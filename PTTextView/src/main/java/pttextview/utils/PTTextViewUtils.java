@@ -28,6 +28,9 @@ import pttextview.R;
 
 
 /**
+ * Set of static utility methods that apply the selected typeface
+ * to provided {@link pttextview.widget.PTTextView} object
+ * <p/>
  * Created by Oleg on 18.07.15.
  */
 public class PTTextViewUtils {
@@ -35,35 +38,67 @@ public class PTTextViewUtils {
     private PTTextViewUtils() {
     }
 
-    public static void setTypeface(@NonNull TextView textView, @NonNull Context context, @Nullable AttributeSet attrs) {
+    /**
+     * Typeface initializer used in {@link pttextview.widget.PTTextView}
+     * constructor
+     *
+     * @param textView {@link pttextview.widget.PTTextView} object
+     * @param context  the widget running in
+     * @param attrs    set of attributes defined in XML from which layout is inflated
+     */
+
+    public static void setTypeface(@NonNull TextView textView, @NonNull Context context,
+                                   @Nullable AttributeSet attrs) {
         Typeface typeface;
 
         if (null != attrs) {
             TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.PTTextView);
 
             if (array.hasValue(R.styleable.PTTextView_typeface)) {
-                int typefaceValue = array.getInt(R.styleable.PTTextView_typeface, PTTypefaceManager.Typefaces.PT_SANS_REGULAR.getIndex());
+                int typefaceValue = array.getInt(R.styleable.PTTextView_typeface,
+                        PTTypefaceManager.Typefaces.PT_SANS_REGULAR.getIndex());
                 typeface = PTTypefaceManager.getTypeface(context, typefaceValue);
             } else {
-                int fontFamily = array.getInt(R.styleable.PTTextView_fontFamily, PTTypefaceManager.FontFamilies.PT_SANS.ordinal());
-                int textWeight = array.getInt(R.styleable.PTTextView_textWeight, PTTypefaceManager.TextWeights.NORMAL.ordinal());
-                int textStyle = array.getInt(R.styleable.PTTextView_textStyle, PTTypefaceManager.TextStyles.REGULAR.ordinal()) ;
+                int fontFamily = array.getInt(R.styleable.PTTextView_fontFamily,
+                        PTTypefaceManager.FontFamilies.PT_SANS.ordinal());
+                int textWeight = array.getInt(R.styleable.PTTextView_textWeight,
+                        PTTypefaceManager.TextWeights.NORMAL.ordinal());
+                int textStyle = array.getInt(R.styleable.PTTextView_textStyle,
+                        PTTypefaceManager.TextStyles.REGULAR.ordinal());
 
                 typeface = PTTypefaceManager.getTypeface(context, fontFamily, textWeight, textStyle);
             }
 
             array.recycle();
         } else {
-            typeface = PTTypefaceManager.getTypeface(context, PTTypefaceManager.Typefaces.PT_SANS_REGULAR.getIndex());
+            typeface = PTTypefaceManager.getTypeface(context,
+                    PTTypefaceManager.Typefaces.PT_SANS_REGULAR.getIndex());
         }
 
         setTypeface(textView, typeface);
     }
 
+    /**
+     * Setup typeface for {@Link android.widget.TextView}. Wrapper over
+     * {@link android.widget.TextView#setTypeface(android.graphics.Typeface)}
+     * for making the font anti-aliased.
+     *
+     * @param textView The text view
+     * @param typeface The specify typeface
+     */
+
     public static void setTypeface(@NonNull TextView textView, @NonNull Typeface typeface) {
-        textView.setPaintFlags(textView.getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
+        textView.setPaintFlags(textView.getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG |
+                Paint.ANTI_ALIAS_FLAG);
         textView.setTypeface(typeface);
     }
+
+    /**
+     * Setup typeface for Paint.
+     *
+     * @param paint    The paint
+     * @param typeface The specify typeface
+     */
 
     public static void setTypeface(@NonNull Paint paint, @NonNull Typeface typeface) {
         paint.setFlags(paint.getFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);

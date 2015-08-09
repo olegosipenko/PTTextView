@@ -21,6 +21,8 @@ import android.support.annotation.NonNull;
 import android.util.SparseArray;
 
 /**
+ * A typeface manager that creates and holds {@link android.graphics.Typeface} object instances
+ * <p/>
  * Created by Oleg on 18.07.15.
  */
 public class PTTypefaceManager {
@@ -29,7 +31,16 @@ public class PTTypefaceManager {
 
     private static final SparseArray<Typeface> typefaces = new SparseArray(FONTS);
 
-    public static Typeface getTypeface(@NonNull Context context, int index) throws IllegalArgumentException {
+    /**
+     * Utitlity method that returns {@link android.graphics.Typeface} object
+     * instance based on "typeface" attribute value
+     *
+     * @param context the widget running in
+     * @param index   value of "typeface" attribute
+     * @return {@link android.graphics.Typeface}
+     */
+
+    public static Typeface getTypeface(@NonNull Context context, int index) {
         Typeface typeface = typefaces.get(index);
         if (null == typeface) {
             typeface = initTypeface(context, index);
@@ -38,7 +49,20 @@ public class PTTypefaceManager {
         return typeface;
     }
 
-    public static Typeface getTypeface(@NonNull Context context, @NonNull int fontFamily, int textWeight, int textStyle) {
+    /**
+     * Utitlity method that returns {@link android.graphics.Typeface} object instance
+     * based on set of parameters
+     *
+     * @param context    the widget running in
+     * @param fontFamily value of "fontFamily" attribute
+     * @param textWeight value of "textWeight" attribute
+     * @param textStyle  value of "textStyle" attribute
+     * @return {@link android.graphics.Typeface}
+     * @throws IllegalArgumentException in case of invalid "typeface" attribute value
+     */
+
+    public static Typeface getTypeface(@NonNull Context context, @NonNull int fontFamily,
+                                       int textWeight, int textStyle) throws IllegalArgumentException {
         int index = getTypefaceIndex(fontFamily, textWeight, textStyle);
         return getTypeface(context, index);
     }
@@ -48,131 +72,150 @@ public class PTTypefaceManager {
             if (textWeight == TextWeights.NORMAL.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_REGULAR.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SANS_ITALIC.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else if (textWeight == TextWeights.BOLD.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_BOLD.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SANS_BOLD_ITALIC.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else {
-                throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
+                throw new IllegalArgumentException("Unknown `textWeight` attribute value "
+                        + textWeight);
             }
         } else if (fontFamily == FontFamilies.PT_SANS_NARROW.ordinal()) {
             if (textWeight == TextWeights.NORMAL.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_NARROW.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SANS_NARROW.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else if (textWeight == TextWeights.BOLD.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_NARROW_BOLD.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SANS_NARROW_BOLD.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else {
-                throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
+                throw new IllegalArgumentException("Unknown `textWeight` attribute value "
+                        + textWeight);
             }
         } else if (fontFamily == FontFamilies.PT_SANS_CAPTION.ordinal()) {
             if (textWeight == TextWeights.NORMAL.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_CAPTION.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SANS_CAPTION.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else if (textWeight == TextWeights.BOLD.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SANS_CAPTION_BOLD.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SANS_CAPTION_BOLD.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else {
-                throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
+                throw new IllegalArgumentException("Unknown `textWeight` attribute value "
+                        + textWeight);
             }
         } else if (fontFamily == FontFamilies.PT_SERIF.ordinal()) {
             if (textWeight == TextWeights.NORMAL.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SERIF.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SERIF_ITALIC.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else if (textWeight == TextWeights.BOLD.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SERIF_BOLD.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SERIF_BOLD_ITALIC.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else {
-                throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
+                throw new IllegalArgumentException("Unknown `textWeight` attribute value "
+                        + textWeight);
             }
         } else if (fontFamily == FontFamilies.PT_SERIF_CAPTION.ordinal()) {
             if (textWeight == TextWeights.NORMAL.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SERIF_CAPTION.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SERIF_CAPTION_ITALIC.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else if (textWeight == TextWeights.BOLD.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_SERIF_CAPTION.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_SERIF_CAPTION_ITALIC.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else {
-                throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
+                throw new IllegalArgumentException("Unknown `textWeight` attribute value "
+                        + textWeight);
             }
         } else if (fontFamily == FontFamilies.PT_MONO.ordinal()) {
             if (textWeight == TextWeights.NORMAL.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_MONO_REGULAR.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_MONO_REGULAR.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else if (textWeight == TextWeights.BOLD.ordinal()) {
                 if (textStyle == TextStyles.REGULAR.ordinal()) {
                     return Typefaces.PT_MONO_BOLD.getIndex();
-                } else if (textStyle == TextStyles.ITALIC.ordinal()){
+                } else if (textStyle == TextStyles.ITALIC.ordinal()) {
                     return Typefaces.PT_MONO_BOLD.getIndex();
                 } else {
-                    throw new IllegalArgumentException("Unknown `textStyle` attribute value " + textStyle);
+                    throw new IllegalArgumentException("Unknown `textStyle` attribute value "
+                            + textStyle);
                 }
             } else {
-                throw new IllegalArgumentException("Unknown `textWeight` attribute value " + textWeight);
+                throw new IllegalArgumentException("Unknown `textWeight` attribute value "
+                        + textWeight);
             }
-        }else {
-            throw new IllegalArgumentException("Unknown `fontFamily` attribute value " + fontFamily);
+        } else {
+            throw new IllegalArgumentException("Unknown `fontFamily` attribute value "
+                    + fontFamily);
         }
     }
 
     private static Typeface initTypeface(Context context, int index) {
         return Typeface.createFromAsset(context.getAssets(), Typefaces.getFilePathByIndex(index));
     }
-    
+
     public enum Typefaces {
 
         PT_SANS_REGULAR("fonts/PT Sans Regular.ttf", 0),

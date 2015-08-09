@@ -3,7 +3,7 @@
 
 A project was inspired by [RobotoTextView](https://github.com/johnkil/Android-RobotoTextView)
 
-// TODO add links to fonts and screens
+
 List of supported fonts:
 * [PTSans](https://www.google.com/fonts/specimen/PT+Sans)
 * [PTSansNarrow](https://www.google.com/fonts/specimen/PT+Sans+Narrow)
@@ -11,6 +11,19 @@ List of supported fonts:
 * [PTSerif](https://www.google.com/fonts/specimen/PT+Serif)
 * [PTSerifCaption](https://www.google.com/fonts/specimen/PT+Serif+Caption)
 * [PTMono](https://www.google.com/fonts/specimen/PT+Mono)
+
+![image](http://www.paratype.ru/public/ptssm_16faces.png)
+
+Compatibility
+-------------
+
+The widget supports API down to Android 2.1 (API >= 7)
+
+Credits
+-------
+The idea of this library was inspired by [Android-RobotoTextView]
+(https://github.com/johnkil/Android-RobotoTextView) by [Evgeny Shishkin](https://github.com/johnkil)
+
 
 License
 -------
