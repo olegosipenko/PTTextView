@@ -26,8 +26,6 @@ public class SampleActivity : Activity() {
                         sampleText.setTextSize(i.toFloat())
                     }
                 }
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
