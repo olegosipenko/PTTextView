@@ -14,30 +14,24 @@
         android:id="@+id/sampleText"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="10"
+        android:layout_weight="20"
         android:textSize="12sp"
+        android:lineSpacingMultiplier="1.2"
         android:text="@string/lorem"
         android:ellipsize="marquee"
         />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:text="@string/choose_the_size"/>
 
-        <pttextview.widget.PTTextView
-            android:text="@string/choose_the_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:prompt="@string/choose_the_size"
-
-            android:entries="@array/textSizes"/>
-
-    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:max="44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

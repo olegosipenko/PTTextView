@@ -4,7 +4,10 @@ import android.app.Activity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import com.jakewharton.rxbinding.widget.RxSeekBar
 import kotlinx.android.synthetic.activity_sample.sampleText
+import kotlinx.android.synthetic.activity_sample.seekBar
+import kotlinx.android.synthetic.activity_sample.text
 import pttextview.utils.PTTypefaceManager
 
 public class SampleActivity : Activity() {
@@ -14,6 +17,17 @@ public class SampleActivity : Activity() {
         setContentView(R.layout.activity_sample)
         val typeface = PTTypefaceManager.getTypeface(this, getIntent().getIntExtra(INDEX, 0))
         sampleText.setTypeface(typeface)
+
+        RxSeekBar.changes(seekBar)
+                .map { i -> i + 12 }
+                .subscribe { i ->
+                    run {
+                        text.setText(getResources().getString(R.string.choose_the_size) + " " + i + "sp")
+                        sampleText.setTextSize(i.toFloat())
+                    }
+                }
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

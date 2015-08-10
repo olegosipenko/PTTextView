@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "oleg.osipenko.pttextviewsampleapp"
-        minSdkVersion 7
+        minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -26,7 +26,9 @@ android {
 dependencies {
     def sampleAppDependencies = rootProject.ext.sampleAppDependencies
     compile sampleAppDependencies.kotlinLib
+    compile sampleAppDependencies.anko
     compile project(':PTTextView')
+    compile sampleAppDependencies.rxBinding
 }
 
 buildscript {

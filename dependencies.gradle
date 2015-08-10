@@ -1,6 +1,8 @@
 ext {
     appCompatVersion = '22.2.1'
     kotlinLibVersion = '0.12.1218'
+    ankoVersion = '0.6.2-15s'
+    bindingVersion = '0.1.0'
 
     libraryDependencies = [
             appcompat: "com.android.support:appcompat-v7:$appCompatVersion"
@@ -8,6 +10,7 @@ ext {
 
     sampleAppDependencies = [
             kotlinLib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlinLibVersion",
-            ptTextView: ':PTTextView'
+            anko     : "org.jetbrains.anko:anko:$ankoVersion",
+            rxBinding: "com.jakewharton.rxbinding:rxbinding:$bindingVersion"
     ]
 }

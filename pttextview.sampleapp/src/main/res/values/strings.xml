@@ -23,30 +23,13 @@
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="choose_the_size">TextSize</string>
 
-    <string-array name="textSizes">
-        <item>12sp</item>
-        <item>14sp</item>
-        <item>16sp</item>
-        <item>18sp</item>
-        <item>20sp</item>
-        <item>22sp</item>
-        <item>24sp</item>
-        <item>26sp</item>
-        <item>28sp</item>
-        <item>30sp</item>
-        <item>32sp</item>
-        <item>34sp</item>
-        <item>36sp</item>
-        <item>38sp</item>
-        <item>40sp</item>
-        <item>42sp</item>
-        <item>44sp</item>
-        <item>46sp</item>
-        <item>48sp</item>
-        <item>50sp</item>
-        <item>52sp</item>
-        <item>54sp</item>
-        <item>56sp</item>
-    </string-array>
+    <string name="sp12">12sp</string>
+    <string name="sp18">18sp</string>
+    <string name="sp24">24sp</string>
+    <string name="sp30">30sp</string>
+    <string name="sp36">36sp</string>
+    <string name="sp42">42sp</string>
+    <string name="sp48">48sp</string>
+    <string name="sp56">56sp</string>
 
 </resources>
