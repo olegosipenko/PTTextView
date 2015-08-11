@@ -4,7 +4,7 @@
       tools:context="oleg.osipenko.pttextviewsampleapp.SampleActivity">
     <item
         android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+        android:title="@string/action_license"
         android:orderInCategory="100"
         app:showAsAction="never"/>
 </menu>

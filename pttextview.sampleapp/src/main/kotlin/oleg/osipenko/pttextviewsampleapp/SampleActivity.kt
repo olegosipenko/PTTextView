@@ -1,7 +1,7 @@
 package oleg.osipenko.pttextviewsampleapp
 
-import android.app.Activity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.jakewharton.rxbinding.widget.RxSeekBar
@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.activity_sample.text
 import pttextview.utils.PTTypefaceManager
 import rx.Subscription
 
-public class SampleActivity : Activity() {
+public class SampleActivity : AppCompatActivity() {
 
     var subscription: Subscription? = null
 
