@@ -9,8 +9,11 @@ import kotlinx.android.synthetic.activity_sample.sampleText
 import kotlinx.android.synthetic.activity_sample.seekBar
 import kotlinx.android.synthetic.activity_sample.text
 import pttextview.utils.PTTypefaceManager
+import rx.Subscription
 
 public class SampleActivity : Activity() {
+
+    var subscription: Subscription? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +21,7 @@ public class SampleActivity : Activity() {
         val typeface = PTTypefaceManager.getTypeface(this, getIntent().getIntExtra(INDEX, 0))
         sampleText.setTypeface(typeface)
 
-        RxSeekBar.changes(seekBar)
+        subscription = RxSeekBar.changes(seekBar)
                 .map { i -> i + 12 }
                 .subscribe { i ->
                     run {
@@ -32,6 +35,11 @@ public class SampleActivity : Activity() {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_sample, menu)
         return true
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        subscription?.unsubscribe()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
