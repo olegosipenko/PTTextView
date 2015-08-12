@@ -19,6 +19,19 @@ List of supported fonts:
 List of widgets:
  - PTTextView
  - PTEditText
+ - PTButton
+ - PTCheckBox
+ - PTAutocompleteTextView
+ - PTCheckedTextView
+ - PTCompoundButton
+ - PTExtractEditText
+ - PTMultiAutoCompleteTextView
+ - PTRadioButton
+ - PTSwitch
+ - PTToggleButton
+ - PTChronometer
+ - PTDigitalClock
+ - PTTextClock
 
 Download
 --------
@@ -26,19 +39,17 @@ Download [the latest JAR][1] or grab via Maven:
 
 ```xml
 <dependency>
-    <groupId>com.squareup.flow</groupId>
-    <artifactId>flow</artifactId>
+    <groupId>oleg.osipenko</groupId>
+    <artifactId>pttextview</artifactId>
     <version>(insert latest version)</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-compile 'com.squareup.flow:flow:(latest version)'
+compile 'oleg.osipenko.pttextview:pttextview:(latest version)'
 ```
 [1]: http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=com.squareup.flow&a=flow&v=LATEST
 
-Usage
------
 Usage
 -----
 
