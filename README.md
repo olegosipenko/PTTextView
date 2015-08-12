@@ -6,7 +6,7 @@ An implementation of a [TextView](http://developer.android.com/reference/android
 A project was inspired by [RobotoTextView](https://github.com/johnkil/Android-RobotoTextView)
 
 
-List of supported fonts:
+####List of supported fonts:
 * [PTSans](https://www.google.com/fonts/specimen/PT+Sans)
 * [PTSansNarrow](https://www.google.com/fonts/specimen/PT+Sans+Narrow)
 * [PTSansCaption](https://www.google.com/fonts/specimen/PT+Sans+Caption)
@@ -16,7 +16,7 @@ List of supported fonts:
 
 ![image](http://www.paratype.ru/public/ptssm_16faces.png)
 
-List of widgets:
+###List of supported widgets:
  - PTTextView
  - PTEditText
  - PTButton
@@ -159,7 +159,7 @@ The idea of this library was inspired by [Android-RobotoTextView]
 License
 -------
 
-    Copyright 2015 Oleg Osipenko
+    Copyright (C) 2015 Oleg Osipenko
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
