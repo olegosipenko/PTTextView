@@ -21,9 +21,9 @@ public class SampleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
         val typeface = PTTypefaceManager.getTypeface(this, getIntent().getIntExtra(INDEX, 0))
-        sampleText.setTypeface(typeface)
-        inputText.setTypeface(typeface)
-        textInput.setTypeface(typeface)
+        val viewArray = arrayOf(sampleText, inputText, textInput, text)
+        for (view in viewArray)
+            view.setTypeface(typeface)
 
         seekBarSubscription = RxSeekBar.changes(seekBar)
                 .map { i -> i + MIN_SIZE }
