@@ -3,8 +3,13 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="oleg.osipenko.pttextviewsampleapp.SampleActivity">
     <item
-        android:id="@+id/action_settings"
-        android:title="@string/action_license"
+        android:id="@+id/action_sample"
+        android:title="@string/action_sample"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_input"
+        android:title="@string/action_input"
         android:orderInCategory="100"
         app:showAsAction="never"/>
 </menu>

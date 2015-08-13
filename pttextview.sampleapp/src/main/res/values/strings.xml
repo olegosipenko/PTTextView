@@ -24,5 +24,7 @@
     <string name="choose_the_size">TextSize</string>
     <string name="title">Software licenses</string>
     <string name="btn_close">Close</string>
+    <string name="action_sample">Lorem Ipsum</string>
+    <string name="action_input">Text Input</string>
 
 </resources>
