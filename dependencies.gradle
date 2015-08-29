@@ -1,6 +1,6 @@
 ext {
     appCompatVersion = '23.0.0'
-    kotlinLibVersion = '0.12.1218'
+    kotlinLibVersion = '0.12.1230'
     ankoVersion = '0.6.2-15s'
     bindingVersion = '0.2.0'
 
