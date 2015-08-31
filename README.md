@@ -36,20 +36,25 @@ A project was inspired by [RobotoTextView](https://github.com/johnkil/Android-Ro
 
  ![image](https://github.com/olegosipenko/PTTextView/blob/develop/art/device-2015-08-31-155939_framed.png)
 
+ <a href="https://play.google.com/store/apps/details?id=oleg.osipenko.pttextviewsampleapp">
+   <img alt="Get it on Google Play"
+        src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+ </a>
+
 Download
 --------
 Download [the latest JAR][1] or grab via Maven:
 
 ```xml
 <dependency>
-    <groupId>oleg.osipenko</groupId>
+    <groupId>com.github.olegosipenko</groupId>
     <artifactId>pttextview</artifactId>
-    <version>(insert latest version)</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-compile 'oleg.osipenko.pttextview:pttextview:(latest version)'
+compile 'com.github.olegosipenko:pttextview:1.0.0'
 ```
 [1]: http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=com.squareup.flow&a=flow&v=LATEST
 
