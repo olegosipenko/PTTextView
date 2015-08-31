@@ -98,8 +98,8 @@
     <orderEntry type="library" exported="" name="anko-0.6.2-15s" level="project" />
     <orderEntry type="library" exported="" name="kotlin-runtime-0.12.1230" level="project" />
     <orderEntry type="library" exported="" name="rxbinding-0.2.0" level="project" />
-    <orderEntry type="library" exported="" name="kotlin-stdlib-0.12.1230" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.0.0" level="project" />
+    <orderEntry type="library" exported="" name="kotlin-stdlib-0.12.1230" level="project" />
     <orderEntry type="module" module-name="PTTextView-PTTextView" exported="" />
   </component>
 </module>
