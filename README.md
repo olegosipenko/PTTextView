@@ -1,5 +1,6 @@
 Android-PTTextView
 ==================
+![image](https://github.com/olegosipenko/PTTextView/blob/develop/art/banner.png)
 
 An implementation of a [TextView](http://developer.android.com/reference/android/widget/TextView.html) with support of [Paratype & Google PT font family](http://www.paratype.com/public/)
 
