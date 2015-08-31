@@ -33,6 +33,8 @@ A project was inspired by [RobotoTextView](https://github.com/johnkil/Android-Ro
  - PTDigitalClock
  - PTTextClock
 
+ ![image](https://github.com/olegosipenko/PTTextView/blob/develop/art/device-2015-08-31-155939_framed.png)
+
 Download
 --------
 Download [the latest JAR][1] or grab via Maven:
