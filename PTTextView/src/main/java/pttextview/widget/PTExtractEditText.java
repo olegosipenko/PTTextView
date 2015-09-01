@@ -26,7 +26,7 @@ import pttextview.utils.PTTextViewUtils;
 /**
  * A {@link android.inputmethodservice.ExtractEditText} with native support
  * for all the Google PT fonts.
- * <p/>
+ * <br>
  *
  * @author Oleg Osipenko on 19.07.15.
  */
@@ -48,8 +48,8 @@ public class PTExtractEditText extends ExtractEditText {
      * specified in the XML file. This version uses a default style of
      * 0, so the only attribute values applied are those in the Context's Theme
      * and the given AttributeSet.
-     * <p/>
-     * <p/>
+     * <br>
+     * <br>
      * The method onFinishInflate() will be called after all children have been
      * added.
      *
@@ -69,7 +69,7 @@ public class PTExtractEditText extends ExtractEditText {
 
     /**
      * Constructor is used when creating view through XML with specifying
-     * {@Link android.content.res.Resources.Theme} attribute. This
+     * {@link android.content.res.Resources.Theme} attribute. This
      * constructor of View allows subclasses to use
      * their own base style when they are inflating.
      *
@@ -93,7 +93,7 @@ public class PTExtractEditText extends ExtractEditText {
 
     /**
      * Constructor is used when creating view through XML with specifying
-     * {@Link android.content.res.Resources.Theme} attribute. This
+     * {@link android.content.res.Resources.Theme} attribute. This
      * constructor of View allows subclasses to use
      * their own base style when they are inflating.
      *
@@ -104,6 +104,9 @@ public class PTExtractEditText extends ExtractEditText {
      *                     will be applied (beyond what is included in the theme). This may
      *                     either be an attribute resource, whose value will be retrieved
      *                     from the current theme, or an explicit style resource.
+     * @param defStyleRes  A resource identifier of a style resource that supplies default
+     *                     values for the StyledAttributes, used only if defStyleAttr is 0 or
+     *                     can not be found in the theme. Can be 0 to not look for defaults.
      * @see #PTExtractEditText(Context, AttributeSet)
      */
 

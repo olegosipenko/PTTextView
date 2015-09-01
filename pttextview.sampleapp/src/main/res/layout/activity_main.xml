@@ -1,4 +1,5 @@
 <LinearLayout
+    android:id="@+id/viewGroup"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -18,16 +19,16 @@
         app:typeface="pt_sans_regular"/>
 
     <pttextview.widget.PTTextView
-        android:id="@+id/pt_sans_bold"
-        android:text="@string/pt_sans_bold"
-        style="@style/list_style"
-        app:typeface="pt_sans_bold"/>
-
-    <pttextview.widget.PTTextView
         android:id="@+id/pt_sans_italic"
         android:text="@string/pt_sans_italic"
         style="@style/list_style"
         app:typeface="pt_sans_italic"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_sans_bold"
+        android:text="@string/pt_sans_bold"
+        style="@style/list_style"
+        app:typeface="pt_sans_bold"/>
 
     <pttextview.widget.PTTextView
         android:id="@+id/pt_sans_bold_italic"
@@ -66,16 +67,16 @@
         app:typeface="pt_serif_regular"/>
 
     <pttextview.widget.PTTextView
-        android:id="@+id/pt_serif_bold"
-        android:text="@string/pt_serif_bold"
-        style="@style/list_style"
-        app:typeface="pt_serif_bold"/>
-
-    <pttextview.widget.PTTextView
         android:id="@+id/pt_serif_italic"
         android:text="@string/pt_serif_italic"
         style="@style/list_style"
         app:typeface="pt_serif_italic"/>
+
+    <pttextview.widget.PTTextView
+        android:id="@+id/pt_serif_bold"
+        android:text="@string/pt_serif_bold"
+        style="@style/list_style"
+        app:typeface="pt_serif_bold"/>
 
     <pttextview.widget.PTTextView
         android:id="@+id/pt_serif_bold_italic"

@@ -1,12 +1,36 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'android-pttextview'
+
+    publishedGroupId = 'com.github.olegosipenko'
+    libraryName = 'PTTextView'
+    artifact = 'pttextview'
+
+    libraryDescription = 'An implementation of a TextView with support of Paratype & Google PT font family'
+
+    siteUrl = 'https://github.com/olegosipenko/PTTextView'
+    gitUrl = 'https://github.com/olegosipenko/PTTextView.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'olegosipenko'
+    developerName = 'Oleg Osipenko'
+    developerEmail = 'oleg.s.osipenko@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
 
     defaultConfig {
         minSdkVersion 7
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -23,6 +47,8 @@ android {
 
 dependencies {
     def libraryDependencies = rootProject.ext.libraryDependencies
-
     compile libraryDependencies.appcompat
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

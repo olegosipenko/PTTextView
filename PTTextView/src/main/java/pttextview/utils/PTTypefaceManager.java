@@ -22,7 +22,7 @@ import android.util.SparseArray;
 
 /**
  * A typeface manager that creates and holds {@link android.graphics.Typeface} object instances
- * <p/>
+ * <br>
  * Created by Oleg on 18.07.15.
  */
 public class PTTypefaceManager {

@@ -30,7 +30,7 @@ import pttextview.R;
 /**
  * Set of static utility methods that apply the selected typeface
  * to provided {@link pttextview.widget.PTTextView} object
- * <p/>
+ * <br>
  * Created by Oleg on 18.07.15.
  */
 public class PTTextViewUtils {
@@ -79,7 +79,7 @@ public class PTTextViewUtils {
     }
 
     /**
-     * Setup typeface for {@Link android.widget.TextView}. Wrapper over
+     * Setup typeface for {@link android.widget.TextView}. Wrapper over
      * {@link android.widget.TextView#setTypeface(android.graphics.Typeface)}
      * for making the font anti-aliased.
      *

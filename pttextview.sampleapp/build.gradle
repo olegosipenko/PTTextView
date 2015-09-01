@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
 
     defaultConfig {
         applicationId "oleg.osipenko.pttextviewsampleapp"
-        minSdkVersion 7
-        targetSdkVersion 22
+        minSdkVersion 15
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -26,11 +26,13 @@ android {
 dependencies {
     def sampleAppDependencies = rootProject.ext.sampleAppDependencies
     compile sampleAppDependencies.kotlinLib
+    compile sampleAppDependencies.anko
     compile project(':PTTextView')
+    compile sampleAppDependencies.rxBinding
 }
 
 buildscript {
-    ext.kotlin_version = '0.12.1218'
+    ext.kotlin_version = '0.12.1230'
     repositories {
         mavenCentral()
     }

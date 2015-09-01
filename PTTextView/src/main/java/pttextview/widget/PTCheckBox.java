@@ -24,7 +24,7 @@ import pttextview.utils.PTTextViewUtils;
 /**
  * A {@link android.support.v7.widget.AppCompatCheckBox} with native support
  * for all the Google PT fonts.
- * <p/>
+ * <br>
  *
  * @author Oleg Osipenko on 19.07.15.
  */
@@ -46,8 +46,8 @@ public class PTCheckBox extends AppCompatCheckBox {
      * specified in the XML file. This version uses a default style of
      * 0, so the only attribute values applied are those in the Context's Theme
      * and the given AttributeSet.
-     * <p/>
-     * <p/>
+     * <br>
+     * <br>
      * The method onFinishInflate() will be called after all children have been
      * added.
      *
@@ -67,7 +67,7 @@ public class PTCheckBox extends AppCompatCheckBox {
 
     /**
      * Constructor is used when creating view through XML with specifying
-     * {@Link android.content.res.Resources.Theme} attribute. This
+     * {@link android.content.res.Resources.Theme} attribute. This
      * constructor of View allows subclasses to use
      * their own base style when they are inflating.
      *
