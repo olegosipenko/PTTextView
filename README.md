@@ -47,9 +47,9 @@ Download [the latest JAR][1] or grab via Maven:
 
 ```xml
 <dependency>
-    <groupId>com.github.olegosipenko</groupId>
-    <artifactId>pttextview</artifactId>
-    <version>1.0.0</version>
+  <groupId>com.github.olegosipenko</groupId>
+  <artifactId>PTTextView</artifactId>
+  <version>1.0.0</version>
 </dependency>
 ```
 or Gradle:
