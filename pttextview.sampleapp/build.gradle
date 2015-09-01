@@ -27,7 +27,7 @@ dependencies {
     def sampleAppDependencies = rootProject.ext.sampleAppDependencies
     compile sampleAppDependencies.kotlinLib
     compile sampleAppDependencies.anko
-    compile project(':PTTextView')
+    compile project(':pttextview')
     compile sampleAppDependencies.rxBinding
 }
 
