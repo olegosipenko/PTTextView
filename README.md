@@ -54,7 +54,14 @@ Download [the latest JAR][1] or grab via Maven:
 ```
 or Gradle:
 ```groovy
-compile 'com.github.olegosipenko:pttextview:1.0.0'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.github.olegosipenko:pttextview:1.0.0'
+}
 ```
 [1]: http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=com.squareup.flow&a=flow&v=LATEST
 
