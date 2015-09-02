@@ -34,6 +34,7 @@ A project was inspired by [RobotoTextView](https://github.com/johnkil/Android-Ro
  - PTDigitalClock
  - PTTextClock
 
+
  ![image](https://github.com/olegosipenko/PTTextView/blob/develop/art/device-2015-08-31-155939_framed.png)
 
  <a href="https://play.google.com/store/apps/details?id=oleg.osipenko.pttextviewsampleapp">
@@ -63,7 +64,7 @@ dependencies {
     compile 'com.github.olegosipenko:pttextview:1.0.0'
 }
 ```
-[1]: http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=com.squareup.flow&a=flow&v=LATEST
+[1]: https://github.com/olegosipenko/PTTextView/releases/download/v1.0.0/pttextview-1.0.0.aar
 
 Usage
 -----
