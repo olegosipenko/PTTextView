@@ -1,5 +1,5 @@
 ext {
-    appCompatVersion = '23.0.0'
+    appCompatVersion = '23.0.1'
     kotlinLibVersion = '0.12.1230'
     ankoVersion = '0.6.2-15s'
     bindingVersion = '0.2.0'
