@@ -1,5 +1,7 @@
 Android-PTTextView
 ==================
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PTTextView-green.svg?style=true)](https://android-arsenal.com/details/1/3263)
+
 ![image](https://github.com/olegosipenko/PTTextView/blob/develop/art/banner.png)
 
 An implementation of a [TextView](http://developer.android.com/reference/android/widget/TextView.html) with support of [Paratype & Google PT font family](http://www.paratype.com/public/)
