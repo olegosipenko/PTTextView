@@ -3,6 +3,7 @@ Android-PTTextView
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PTTextView-green.svg?style=true)](https://android-arsenal.com/details/1/3263)
 
 ![image](https://github.com/olegosipenko/PTTextView/blob/develop/art/banner.png)
+<a href="http://www.methodscount.com/?lib=com.github.olegosipenko%3Apttextview%3A1.0.0"><img src="https://img.shields.io/badge/Methods and size-core: 181 | deps: 13751 | 2887 KB-e91e63.svg"></img></a>
 
 An implementation of a [TextView](http://developer.android.com/reference/android/widget/TextView.html) with support of [Paratype & Google PT font family](http://www.paratype.com/public/)
 
@@ -39,7 +40,7 @@ A project was inspired by [RobotoTextView](https://github.com/johnkil/Android-Ro
 
  ![image](https://github.com/olegosipenko/PTTextView/blob/develop/art/device-2015-08-31-155939_framed.png)
 
- <a href="https://play.google.com/store/apps/details?id=oleg.osipenko.pttextviewsampleapp&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"><img alt="Get it on Google Play" width=500 src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" /></a>
+ <a href="https://play.google.com/store/apps/details?id=oleg.osipenko.pttextviewsampleapp&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"><img alt="Get it on Google Play" width="200" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" /></a>
 
 Download
 --------
