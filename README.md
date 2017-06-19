@@ -1,5 +1,7 @@
 Android-PTTextView
 ==================
+Deprecated - use new TextView `android:font` attribute instead
+
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PTTextView-green.svg?style=true)](https://android-arsenal.com/details/1/3263)
 <a href="http://www.methodscount.com/?lib=com.github.olegosipenko%3Apttextview%3A1.0.0"><img src="https://img.shields.io/badge/Methods and size-core: 181 | deps: 13751 | 2887 KB-e91e63.svg"></img></a>
 
